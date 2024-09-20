@@ -92,6 +92,12 @@ h2 {
     color: #333;
 }
 
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #f4783f;
+}
+
 p {
     font-size: 1.1rem;
     line-height: 1.7;
@@ -159,4 +165,85 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+/* Estilos da caixa flutuante de Fale Conosco */
+.contact-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.contact-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.contact-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.minimize-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-content {
+    padding: 20px;
+    display: block;
+}
+
+.contact-box.minimized .contact-content {
+    display: none;
+}
+
+.contact-box.minimized {
+    height: 40px;
+    width: 300px;
+}
+
+/* Estilos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f4d03f;
+    color: #333;
 }
